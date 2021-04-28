@@ -1,0 +1,147 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/bg1.png');
+    background-size: cover;
+    animation: backgroun1d  55s infinite;
+}
+
+
+@keyframes backgroun1d {
+    50% {
+        background-position-x: 10000px;
+    }
+
+    100% {
+        background-position-x: 14000px;
+    }
+}
+
+.gameinfo {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+
+.health {
+    background-image: url('../img/heart.png');
+    height: 60px;
+    width: 80px;
+    background-repeat: no-repeat;
+    margin-left: 730px;
+}
+.health2 {
+    background-image: url('../img/heart.png');
+    height: 60px;
+    width: 80px;
+    background-repeat: no-repeat;
+}
+.health3 {
+    background-image: url('../img/heart.png');
+    height: 60px;
+    width: 80px;
+    background-repeat: no-repeat;
+}
+
+.playercss {
+    background-image:url('../img/playercss.png') ;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.bullet {
+    background-image:url('../img/bullet.png') ;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 58%;
+    transform: translateY(-50%);
+    left: 300px;
+    
+}
+
+
+.meteorcss {
+    background-image:url('../img/meteorcss.png') ;
+    height: 110px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 90px;
+    left: 900px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.meteorcss2 {
+    background-image:url('../img/meteorcss.png') ;
+    height: 110px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 130px;
+    left: 1200px;
+    transform: translateY(-50%);
+}
+
+
+.coincss {
+    background-image: url('../img/coin.png');
+    height: 110px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 90px;
+    left: 900px;
+    top: 80%;
+    transform: translateY(-40%);
+}
+
+
+.coincss2 {
+    background-image: url('../img/coin.png');
+    height: 110px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 390px;
+    left: 600px;
+}
+
+
+
+.gamepause {
+    height: 20px;
+    width: 50px;
+    background-color: #1b1b1d;
+    border-radius: 10px solid 3px ;
+    animation: backgroundpause 2s infinite;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 4px;
+}
+
+
+@keyframes backgroundpause {
+    50% {
+        background-color: #ff0000;
+        transition: 2s;
+    }
+}
+
+
+

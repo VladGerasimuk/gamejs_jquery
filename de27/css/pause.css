@@ -1,0 +1,131 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url('../img/bg1.png');
+    background-size: cover;
+    animation: backgroun1d  55s infinite;
+}
+
+@keyframes backgroun1d {
+    50% {
+        background-position-x: 10000px;
+    }
+
+    100% {
+        background-position-x: 14000px;
+    }
+}
+
+
+#submit {
+    height: 40px;
+    width: 100px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 3px;
+    border-style: none;
+    outline: none;
+    margin-left: 400px;
+    margin-top: 200px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    font-size: 37px;
+    margin-left: 625px;
+    margin-top: 200px;
+}
+
+
+.playercss {
+    background-image:url('../img/playercss.png') ;
+    height: 110px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 290px;
+    left: 500px;
+}
+
+.bulletcss {
+    background-image:url('../img/bulletpause.png') ;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 52.5%;
+    transform: translateY(-50%);
+    left: 620px;
+    animation: bullet 1s infinite;
+}
+
+
+@keyframes bullet {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+        left: 620px;
+        transition: 2s;
+    }
+
+    100% {
+        opacity: 1;
+        left: 800px;
+        transition: 2s;
+    }
+}
+
+.meteorcss {
+    background-image:url('../img/meteorcss.png');
+    height: 110px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 46.5%;
+    transform: translateY(-50%);
+    left: 805px;
+    animation: meteor 2.5s infinite;
+}
+
+@keyframes meteor {
+    0% {
+        background-image:url('../img/meteorcss.png');
+        transition: 1s;
+        background-repeat: no-repeat;
+        height: 110px;
+        width: 130px;
+
+    }
+
+    100% {
+        background-image:url('../img/boom.png');
+        background-repeat: no-repeat;
+        height: 140px;
+        width: 130px;
+    }
+}
+
+
+#submitw {
+    height: 40px;
+    width: 100px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 3px;
+    border-style: none;
+    outline: none;
+    position: absolute;
+    left:663px;
+    top: 472px;
+}

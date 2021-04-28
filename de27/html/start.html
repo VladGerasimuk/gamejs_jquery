@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/start.css">
+    <title>Стартовый экран</title>
+</head>
+<body class="animation">
+    <section id="start" class="visible">
+        <div class="coincss"></div>
+        <div class="coincss2"></div>
+        <div class="coincss3"></div>
+        <div class="meteorcss"></div>
+        <div class="playercss"></div>
+        <div class="logo"></div>
+        <div class="container">
+            <h2>Космолет</h2>
+            <h3>Правила</h3>
+            <ul>
+                <li>1.Передвижение - wasd</li>
+                <li>2.Выстрел - space</li>
+                <li>3.Собирай монетки</li>
+                <li>4.Маниврируй</li>
+                <li>5.Долети до финиша</li>
+                <form action="#" id="startGameForm">
+                    <input onkeyup="check()" type="text" id="login" name="login" placeholder="Введите ваше имя">
+                    <button disabled='disable' type="submit" id="submit">Начать игру</button>
+                </form>
+            </ul>
+        </div>
+    </section>
+    <section id="game">
+        <div class="gameinfo">
+            <div class="gamename">
+                Космолет
+            </div>
+            <div class="playername">
+                Игрок
+            </div>
+            <div class="timer">
+                00:00
+            </div>
+            <div class="coin">
+                Монет:
+            </div>
+            <div class="health">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+            </div>
+        </div>
+    </section>
+    <section id="gamelogic">
+        <div class="player"></div>
+        <div class="gamepole"></div>
+    </section>
+
+
+
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../img/bg1.png');
+    background-size: cover;
+    animation: backgroun1d  55s infinite;
+}
+
+
+@keyframes backgroun1d {
+    50% {
+        background-position-x: 10000px;
+    }
+
+    100% {
+        background-position-x: 14000px;
+    }
+}
+
+
+h2 {
+    color: #fff;
+    margin-left: 58%;
+    transform: translateX(-42%);
+    margin-top: 240px;
+    color: #dfc012;
+    animation: h21 3s infinite;
+}
+
+
+@keyframes h21 {
+    25% {
+        font-size: 20px;
+        color: #daa520;
+    }
+
+    50% {
+        font-size: 25px;
+        color: #dfc012;
+    }
+
+    100% {
+        font-size: 25px;
+        color: #daa520;
+    }
+
+
+
+}
+
+
+
+li {
+    color: #fff;
+    list-style: none;
+    margin-left: 610px;
+    margin-top: 5px;
+    font-size: 17px;
+   
+}
+
+
+#submit {
+    height: 40px;
+    width: 100px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 3px;
+    border-style: none;
+    outline: none;
+    margin-left: 400px;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.playercss1 {
+    background-image:url('../img/playercss.png') ;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 10px;
+    animation: player 8s infinite;
+}
+
+@keyframes player {
+    0% {
+        left: 1px;
+        transition: 2s;
+    }
+
+   100% {
+       left: 1380px;
+       transition: 2s;
+   }
+}
+
+
+
+.playercss2 {
+    background-image:url('../img/playercss2.png') ;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 100px;
+    animation: player 8s infinite;
+}
+
+
+.coincss {
+    position: absolute;
+    background-image:url('../img/coinsraiting.png') ;
+    height: 171px;
+    width: 270px;
+    background-repeat: no-repeat;
+    top: 310px;
+    left: 400px;
+    animation: coin 3s infinite;
+}
+
+
+@keyframes coin {
+    25% {
+        left: 200px;
+    }
+
+    50% {
+        left: 400px;
+    }
+
+    100% {
+        left: 200px;
+    }
+
+    125% {
+        left: 400px;
+    }
+
+    25% {
+        left: 200px;
+    }
+
+    50% {
+        left: 400px;
+    }
+
+    100% {
+        left: 200px;
+    }
+
+    125% {
+        left: 400px;
+    }
+    25% {
+        left: 200px;
+    }
+
+    50% {
+        left: 400px;
+    }
+
+    100% {
+        left: 200px;
+    }
+
+    125% {
+        left: 400px;
+    }
+    25% {
+        left: 200px;
+    }
+
+    50% {
+        left: 400px;
+    }
+
+    100% {
+        left: 200px;
+    }
+
+    125% {
+        left: 400px;
+    }
+
+}
+
+
+.meteorcss {
+    position: absolute;
+    background-image:url('../img/meteorcss.png') ;
+    height: 171px;
+    width: 270px;
+    background-repeat: no-repeat;
+    top: 270px;
+    left: 900px;
+    animation: meteor 3s infinite;
+}
+
+@keyframes meteor {
+    25% {
+        left: 900px;
+    }
+
+    50% {
+        left: 1200px;
+    }
+
+    100% {
+        left: 900px;
+    }
+
+    120% {
+        left: 1200px;
+    }
+
+    25% {
+        left: 900px;
+    }
+
+    50% {
+        left: 1200px;
+    }
+
+    100% {
+        left: 900px;
+    }
+
+    120% {
+        left: 1200px;
+    }
+    25% {
+        left: 900px;
+    }
+
+    50% {
+        left: 1200px;
+    }
+
+    100% {
+        left: 900px;
+    }
+
+    120% {
+        left: 1200px;
+    }
+    25% {
+        left: 900px;
+    }
+
+    50% {
+        left: 1200px;
+    }
+
+    100% {
+        left: 900px;
+    }
+
+    120% {
+        left: 1200px;
+    }
+
+}

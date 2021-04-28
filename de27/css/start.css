@@ -1,0 +1,271 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url('../img/bg1.png');
+    background-size: cover;
+}
+
+.animation {
+    animation: backgroun1d  55s infinite;
+}
+
+
+@keyframes backgroun1d {
+    50% {
+        background-position-x: 10000px;
+    }
+
+    100% {
+        background-position-x: 14000px;
+    }
+}
+
+.gameinfo {
+    display: flex;
+    justify-content: space-around; 
+    color: #fff;
+    width: 100vw;
+}
+
+
+
+
+li {
+    margin-left: 170px;
+    list-style: none;
+    color: #fff;
+    animation: li1 0.5s ;
+    margin-top: 3px;
+}
+
+
+
+@keyframes li1 {
+    0% {
+        opacity: 0.1;
+        font-size: 5px;
+    }
+
+    25% {
+        opacity: 0.3;
+        font-size: 8px;
+    }
+
+
+    75% {
+        opacity: 0.7;
+        font-size: 12px;
+    }
+
+
+    100% {
+        opacity: 1;
+        font-size: 15px;
+    }
+}
+
+.container {
+    position: absolute;
+    height: 500px;
+    width: 600px;
+    left: 440px;
+    top: 240px;
+}
+
+h2 {
+    color: #ff0000;
+    margin-left: 240px;
+    margin-top: 50px;
+   
+}
+
+h3 {
+    color: #fff;
+    margin-left: 250px;
+}
+
+input {
+    margin-left: 150px;
+    height: 40px;
+    width: 120px;
+    border-radius: 3px;
+    border-style: none;
+    outline: none;
+    margin-top: 10px;
+
+}
+
+#submit {
+    height: 40px;
+    width: 100px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 3px;
+    border-style: none;
+    outline: none;
+}
+
+.logo {
+    position: absolute;
+    background-image: url('../img/logo.png');
+    height: 120px;
+    width: 140px;
+    background-repeat: no-repeat;
+    left: 605px;
+    top: 250px;
+}
+
+.playercss {
+    background-image:url('../img/playercss.png') ;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 600px;
+    animation: player 8s infinite;
+}
+
+@keyframes player {
+    0% {
+        left: 1px;
+        transition: 2s;
+    }
+
+   100% {
+       left: 1380px;
+       transition: 2s;
+   }
+}
+
+
+.meteorcss {
+    background-image:url('../img/meteorcss.png') ;
+    height: 110px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 90px;
+    animation: player 8s infinite;
+}
+
+@keyframes meteor {
+    0% {
+        left: 1px;
+        transition: 2s;
+    }
+
+    100% {
+        left: 1380px;
+        transition: 2s;
+    }
+}
+
+.coincss {
+    position: absolute;
+    background-image:url('../img/coin.png') ;
+    height: 60px;
+    width: 70px;
+    background-repeat: no-repeat;
+    top: 510px;
+    left: 400px;
+    animation: coin 3s infinite;
+}
+
+.visible {
+    display:block !important;
+}
+
+#game {
+    overflow-x: hidden;
+    position: absolute;
+    height: 100vh;
+}
+
+section {
+    display: none;
+}
+
+.coincss2 {
+    position: absolute;
+    background-image:url('../img/coin.png') ;
+    height: 60px;
+    width: 70px;
+    background-repeat: no-repeat;
+    top: 410px;
+    left: 400px;
+    animation: coin 3s infinite;
+}
+
+.coincss3 {
+    position: absolute;
+    background-image:url('../img/coin.png') ;
+    height: 60px;
+    width: 70px;
+    background-repeat: no-repeat;
+    top: 310px;
+    left: 400px;
+    animation: coin 3s infinite;
+}
+
+
+
+
+
+@keyframes coin {
+    50% {
+        left: -50px;
+    }
+
+    
+
+    100% {
+        left: 400px;
+    }
+}
+
+
+
+.player {
+    background-image:url('../img/playercss.png') ;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s;
+}
+
+.coingame {
+    background-image:url('../img/coin.png') ;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 1s;
+}
+
+.enemy {
+    background-image:url('../img/enemy.png') ;
+    height: 100px;
+    width: 130px;
+    position: absolute;
+    background-repeat: no-repeat;
+    transition: 1s;
+    left: 1200px;
+}
+
+.bullet {
+    position: absolute;
+    left:500px;
+	width: 89px;
+	height: 73px;
+	background: url("../img/bullet.png") no-repeat;
+    z-index: 25;
+}
